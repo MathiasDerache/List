@@ -1,6 +1,14 @@
-var arrowKeyPressCount = 0;
+function scrollToTop() {
+    // Faites défiler vers le haut de la page
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'  // Utilisez 'smooth' pour un défilement fluide, 'auto' pour un défilement instantané
+    });
+}
 
 function activateEasterEgg() {
+    scrollToTop();
+
     document.body.style.overflow = 'hidden';
     var heIsComing = document.querySelector('.heIsComing');
     heIsComing.style.display = 'block';
@@ -13,4 +21,4 @@ function activateEasterEgg() {
 
 setTimeout(function() {
     activateEasterEgg();
-}, 15000);
+}, 10000);
