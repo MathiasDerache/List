@@ -53,13 +53,16 @@ h1{
     padding: 50px;
 }
 
-.heIsComing {
+.heIsComing{
     display: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100vw;
-    height: 100vh;
     z-index: 999;
+}
+
+.heIsComing img {
+    width: 50vw;
+    height: 75vh;
 }
